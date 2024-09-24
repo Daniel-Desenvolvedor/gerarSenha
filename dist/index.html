@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div style="margin: auto; width: 50%; text-align: center;">
+        <h1>Gere a sua senha de acordo com as opções abaixo</h1>
+
+        <table style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td>
+                    Quantidade de caracteres:
+                </td>
+                <td>
+                    <input type="number" id="qtdCaracts" value="6" style="width: 40px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Serviço:
+                </td>
+                <td>
+                    <select id="servico">
+                        <option value="email">E-mail</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="twitter_x">Twitter / X</option>
+                        <option value="bluesky">BlueSky</option>
+                        <option value="youtube">Youtube</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><div id="opDiferente" style="display: none;"><input type="text" id="outraOp"></div></td>
+            </tr>
+        </table>
+        
+        <br>
+
+        <button id="gerarSnh" style="margin: 0; left: 50%;">Gerar Senha</button>
+        <div id="listarSenhs" style="display: none;"><button id="exibirSnhs" style="margin: 0; left: 50%;">Exibir senha(s)</button></div>
+        <br><br>
+
+        <div id="senhaGrd" style="margin: auto; width: 50%; text-align: center; font-size: 25px;"></div>
+        <div id="sevicos_Senhas" style="display: flex; justify-content: center; align-items: center; font-size: 25px;"></div>
+
+        <br>
+        
+        <button id="exportarCSV" style="margin: 0; left: 50%; display: none;">Exportar para CSV</button>
+
+        <br>
+        
+        <div id="resposta_senha_copiada" style="margin: auto; width: 50%; text-align: center; font-size: 15px; color: red;"></div>
+    </div>
+</body>
+</html>
