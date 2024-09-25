@@ -10,10 +10,10 @@ Obs: A quantidade de caracteres é definida pelo usuário.
 
 ## Instrução
 
-Para testar o projeto execute o comando:
+Para testar o projeto, execute-o no Visual Studio Code com a extensão:
 
-### `tsc -w`
+### `Live Server`
 
-Abra o [http://127.0.0.1:5500/dist/index.html](http://127.0.0.1:5500/dist/index.html) para ver o gerador de senha no navegador.
+Veja o gerador de senha no navegador.
 
 A página será recarregada depois de qualquer alteração no código.
